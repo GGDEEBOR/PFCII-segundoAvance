@@ -11,6 +11,7 @@ Este repositorio contiene la implementación y prueba del modelo **Transformer p
 > DOI: [10.48550/arXiv.2001.08317](https://doi.org/10.48550/arXiv.2001.08317) y ejecuté el repositorio: [https://github.com/KasperGroesLudvigsen/influenza_transformer/](https://github.com/KasperGroesLudvigsen/influenza_transformer/))
 
 También contiene la implementación de nbeats y se hizo la comparativa de ambos modelos.
+
 ---
 
 ## 🎯 Objetivo
@@ -102,7 +103,9 @@ A parte se implementaron los scripts `nbeats.py`, `trainnbeats.py` y `comparacio
 
 > ![Captura del gráfico de predicción](Img/comparacion_final.png)
 
+Los resultados gráficos muestran una comparación detallada entre las predicciones del modelo Transformer y N-BEATS frente a los valores reales (ground truth) en distintas muestras temporales. En general, se observa que N-BEATS presenta un mejor ajuste a la tendencia real, con predicciones más suaves y cercanas a los datos observados, especialmente en segmentos con patrones estacionales o cambios graduales. Por su parte, el Transformer, aunque captura la dirección general de la serie, muestra mayores desviaciones en puntos críticos (como picos o valles) y cierta inestabilidad en las transiciones, lo que sugiere dificultades para generalizar patrones complejos.
 
+En muestras específicas (por ejemplo, la Muestra 3), N-BEATS demuestra mayor precisión al seguir fluctuaciones abruptas, mientras que el Transformer tiende a "rezagarse" o suavizar demasiado estas variaciones. Esto podría deberse a la arquitectura de N-BEATS, que descompone explícitamente la serie en componentes de tendencia y estacionalidad, permitiéndole adaptarse mejor a cambios rápidos. Por el contrario, el Transformer, al depender de mecanismos de atención global, podría estar sobreponderando ciertos pasos temporales o sufriendo de sobreajuste.
 
 
 
