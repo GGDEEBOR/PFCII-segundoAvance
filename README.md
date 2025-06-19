@@ -10,6 +10,7 @@ Este repositorio contiene la implementación y prueba del modelo **Transformer p
 > **"Deep Transformer Models for Time Series Forecasting: The Influenza Prevalence Case"**  
 > DOI: [10.48550/arXiv.2001.08317](https://doi.org/10.48550/arXiv.2001.08317) y ejecuté el repositorio: [https://github.com/KasperGroesLudvigsen/influenza_transformer/](https://github.com/KasperGroesLudvigsen/influenza_transformer/))
 
+También contiene la implementación de nbeats y se hizo la comparativa de ambos modelos.
 ---
 
 ## 🎯 Objetivo
@@ -19,20 +20,20 @@ Ahora, el objetivo, a parte de replicar el modelo propuesto en el artículo menc
 ---
 ## Consideraciones
 
-Para la correcta ejecución de este repositorio, se implementó varios scripts que no soy originales del repositorio original.
+Para la correcta ejecución de este repositorio, se implementó varios scripts que no son propios del repositorio original.
 Se implementaron los script de `train.py` con el cual se generó el archivo ``transformer_timeseries_model.pth``; luego, se implementó `evaluate.py`, `data_utils.py` y hubo algunas modificaciones en los archivos `positional_encoder.py`, `dataset.py`.
-
+A parte se implementaron los scripts `nbeats.py`, `trainnbeats.py` y `comparacion.py` (de ambos modelos).
 
 -------------
 
 🖥️ Entorno de ejecución:
-- CPU (sin GPU)
+- CPU
 
-- Procesador: antiguo
+- Procesador: ( Intel® Core™ Ultra 7 265K) mejor procesador que la semana pasada 
 
 - PyTorch
 
-- Entrenamiento limitado a 5 épocas (≈7 horas)
+- Entrenamiento con 15 épocas (demoró menos tiempo que en el entrenamiento de 5 épocas de la semana pasada con el anterior procesador antiguo que tenía).
 
 
 
@@ -65,52 +66,45 @@ Se implementaron los script de `train.py` con el cual se generó el archivo ``tr
 - sandbox.py.
   
 - utils.py.
+- nbeats.py
+
+- train_nbeats.py
+  
+- comparacion.py
 
 - model / transformer_timeseries.py
 
 > ⚠️ No se subió el archivo generado del entrenamiento`transformer_timeseries_model.pth`.
+> ⚠️ Tampoco se subió el archivo generado del entrenamiento de nbeats `nbeats_model.pth`
 
 
 > Captura de la estructura del proyecto:
 
-> ![Captura de la estructura del proyecto](Img/estructura_repo.jpeg)
+> ![Captura de la estructura del proyecto](Img/estructura_2.jpeg)
 
-## 📉 Resultados obtenidos:
+## 📉 Resultados obtenidos con entrenamiento de 15 épocas del modelo transformers:
 - MSE: 335281.37.
 
 - MAE: 578.89.
 
 - RMSE: 579.03.
 
-Las predicciones fueron planas y sobreestimadas debido al bajo número de épocas y las restricciones del entorno. Sin embargo, el modelo se ejecutó correctamente, y se visualizó la salida comparando histórico, real y predicción.
+
 
 📸 Evidencias:
 
->Captura del entrenamiento de 5 épocas:
+>Captura del entrenamiento de 15 épocas:
 
->![Captura del entrenamiento de 5 épocas](Img/entrenamient_5_epocas.jpeg)
+>![Captura del entrenamiento de 5 épocas](Img/resultado_entrenamiento_15_epocas.jpeg)
 
  
->Captura del gráfico de predicción:
+>Captura del gráfico de comparación entre Transformers y nbeats:
 
-> ![Captura del gráfico de predicción](Img/resultados_prediccion.png)
-
-
->Captura resultado en consola:
-
->![Captura del log de consola](Img/resultado_consola.jpeg)
+> ![Captura del gráfico de predicción](Img/comparacion_final.png)
 
 
 
-## 📈 Consideraciones futuras:
 
-- Entrenamiento con más épocas (cuando disponga de mejor hardware).
-
-- Ajustes de hiperparámetros.
-
-- Evaluación en otros datasets.
-
-- Desarrollo del plan de tesis sobre esta base.
 
 
 ## 📚 Referencia 
