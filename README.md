@@ -103,15 +103,15 @@ A parte se implementaron los scripts `nbeats.py`, `trainnbeats.py` y `comparacio
 📸 Evidencias:
 
 >Captura del entrenamiento de 5 épocas:
-
->![Captura del entrenamiento de 5 épocas](Img/resultados_rediccion.jpeg)
+>![Captura del entrenamiento de 5 épocas](Img/entrenamiento_5_epocas.png)
+>![Captura del entrenamiento de 5 épocas](Img/resultados_prediccion.png)
 
 
 📸 Evidencias:
 
 >Captura del entrenamiento de 15 épocas:
-
->![Captura del entrenamiento de 5 épocas](Img/resultado_entrenamiento_15_epocas.jpeg)
+>![Captura del entrenamiento de 15 épocas](Img/entrenamiento_15_epocas.png)
+>![Captura del entrenamiento de 15 épocas](Img/resultado_entrenamiento_15_epocas.jpeg)
 
  
 >Captura del gráfico de comparación entre Transformers y nbeats:
