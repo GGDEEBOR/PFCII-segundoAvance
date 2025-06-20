@@ -81,15 +81,30 @@ A parte se implementaron los scripts `nbeats.py`, `trainnbeats.py` y `comparacio
 
 > Captura de la estructura del proyecto:
 
-> ![Captura de la estructura del proyecto](Img/estructura_2.jpeg)
+> ![Captura de la estructura del proyecto](Img/estructura_2.jpg)
 
-## 📉 Resultados obtenidos con entrenamiento de 15 épocas del modelo transformers:
+## 📉 Resultados obtenidos con entrenamiento de 5 épocas del modelo transformers:
+
 - MSE: 335281.37.
 
 - MAE: 578.89.
 
 - RMSE: 579.03.
 
+## 📉 Resultados obtenidos con entrenamiento de 15 épocas del modelo transformers:
+
+- MSE: 1442712.349573.
+
+- MAE: 1201.064511.
+
+- RMSE: 1201.129614.
+
+
+📸 Evidencias:
+
+>Captura del entrenamiento de 5 épocas:
+
+>![Captura del entrenamiento de 5 épocas](Img/resultados_rediccion.jpeg)
 
 
 📸 Evidencias:
