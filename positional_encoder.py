@@ -13,7 +13,7 @@ class PositionalEncoder(nn.Module):
         dropout: float = 0.1,
         max_seq_len: int = 5000,
         d_model: int = 512,
-        batch_first: bool = False  # debe ser False para coincidir con checkpoint
+        batch_first: bool = False  # en False para que coincida con checkpoint
     ):
         super().__init__()
 
