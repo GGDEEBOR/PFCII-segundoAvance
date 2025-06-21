@@ -16,7 +16,7 @@ También contiene la implementación de N-BEATS y se hizo la comparativa de ambo
 
 ## 🎯 Objetivo
 
-Ahora, el objetivo, a parte de replicar el modelo propuesto en el artículo mencionado, evaluando su comportamiento inicial sobre datos de prevalencia de influenza, fue entrenar N-NBEATS con el mismo dataset del paper original y comparar ambos modelos para ver un resultado.
+Ahora, el objetivo, a parte de replicar el modelo propuesto en el artículo mencionado, evaluando su comportamiento inicial sobre datos de prevalencia de influenza, fue entrenar N-BEATS con el mismo dataset del paper original y comparar ambos modelos para ver un resultado.
 
 ---
 ## Consideraciones
