@@ -10,13 +10,13 @@ Este repositorio contiene la implementación y prueba del modelo **Transformer p
 > **"Deep Transformer Models for Time Series Forecasting: The Influenza Prevalence Case"**  
 > DOI: [10.48550/arXiv.2001.08317](https://doi.org/10.48550/arXiv.2001.08317) y ejecuté el repositorio: [https://github.com/KasperGroesLudvigsen/influenza_transformer/](https://github.com/KasperGroesLudvigsen/influenza_transformer/))
 
-También contiene la implementación de nbeats y se hizo la comparativa de ambos modelos.
+También contiene la implementación de N-BEATS y se hizo la comparativa de ambos modelos.
 
 ---
 
 ## 🎯 Objetivo
 
-Ahora, el objetivo, a parte de replicar el modelo propuesto en el artículo mencionado, evaluando su comportamiento inicial sobre datos de prevalencia de influenza, fue entrenar nbeats con el mismo dataset del paper original y comparar ambos modelos para ver un resultado.
+Ahora, el objetivo, a parte de replicar el modelo propuesto en el artículo mencionado, evaluando su comportamiento inicial sobre datos de prevalencia de influenza, fue entrenar N-NBEATS con el mismo dataset del paper original y comparar ambos modelos para ver un resultado.
 
 ---
 ## Consideraciones
@@ -67,6 +67,7 @@ A parte se implementaron los scripts `nbeats.py`, `trainnbeats.py` y `comparacio
 - sandbox.py.
   
 - utils.py.
+  
 - nbeats.py
 
 - train_nbeats.py
@@ -114,7 +115,7 @@ A parte se implementaron los scripts `nbeats.py`, `trainnbeats.py` y `comparacio
 >![Captura del entrenamiento de 15 épocas](Img/resultado_entrenamiento_15_epocas.jpeg)
 
  
->Captura del gráfico de comparación entre Transformers y nbeats:
+>Captura del gráfico de comparación entre Transformers y N-BEATS:
 
 > ![Captura del gráfico de predicción](Img/comparacion_final.png)
 
