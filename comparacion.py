@@ -49,7 +49,7 @@ _, _, test_loader, mean, std = get_data_loaders(
 
 # Cargar modelos
 transformer = TimeSeriesTransformer(
-    input_size=1,  # Asegurar que es univariado
+    input_size=1,
     dec_seq_len=168,
     out_seq_len=48,
     dim_val=512,
